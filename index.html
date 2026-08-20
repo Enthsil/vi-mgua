@@ -1,0 +1,387 @@
+<!doctype html>
+<!--
+  ============================================================
+   ВИ МГЮА — материалы подготовки к вступительному испытанию
+   Автор: Иванова М.М.
+   © 2026. Все права защищены.
+   Контакты: ma193@vk.com | Telegram https://t.me/enthsil | VK https://vk.ru/enthsil1
+
+   Личное использование при подготовке разрешено.
+   Копирование, распространение, публикация и коммерческое
+   использование без письменного согласия автора не допускаются.
+  ============================================================
+-->
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Иванова М.М.">
+  <meta name="copyright" content="© 2026 Иванова М.М.. Все права защищены.">
+  <meta name="license" content="Личное использование при подготовке разрешено. Копирование, распространение, публикация и коммерческое использование без согласия автора не допускаются.">
+  <meta name="contact" content="ma193@vk.com | Telegram https://t.me/enthsil | VK https://vk.ru/enthsil1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ВИ МГЮА — интерактивные материалы</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #fbfaff;
+      color: #454553;
+      font-family: "Arial", "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: 0;
+    }
+    main { max-width: 1140px; margin: 0 auto; padding: 22px 22px 48px; }
+
+    /* hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 26px;
+      padding: 44px 44px 40px;
+      margin-bottom: 26px;
+      background: linear-gradient(120deg, #ff4e8b 0%, #b65cff 42%, #4c7bff 78%, #21c7d9 100%);
+      color: #fff;
+    }
+    .hero::after {
+      content: "";
+      position: absolute; right: -70px; top: -90px;
+      width: 280px; height: 280px; border-radius: 50%;
+      background: rgba(255,255,255,.14);
+    }
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: rgba(255,255,255,.9);
+      margin-bottom: 14px;
+    }
+    .hero h1 { margin: 0 0 14px; font-size: 46px; line-height: 1.02; font-weight: 800; color: #fff; }
+    .hero p { margin: 0; max-width: 720px; color: rgba(255,255,255,.92); font-size: 16.5px; line-height: 1.55; }
+    .pills { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill {
+      border-radius: 999px;
+      padding: 9px 16px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(255,255,255,.18);
+      border: 1px solid rgba(255,255,255,.34);
+      backdrop-filter: blur(4px);
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #b65cff;
+      margin: 0 2px 14px;
+    }
+
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .card {
+      position: relative;
+      min-height: 200px;
+      border: 1px solid #ecebf4;
+      border-radius: 20px;
+      background: #fff;
+      padding: 24px 22px 22px;
+      text-decoration: none;
+      color: inherit;
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(30,20,80,.05);
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+    .card::before {
+      content: "";
+      position: absolute; left: 0; top: 0; right: 0; height: 6px;
+      background: var(--accent);
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(30,20,80,.12); }
+    .card span {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .card strong { font-size: 27px; line-height: 1.05; color: #16161f; font-weight: 800; }
+    .card small { color: #6a6a78; font-size: 14.5px; line-height: 1.4; }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .hero h1 { font-size: 38px; } }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } .hero { padding: 32px 24px; } .hero h1 { font-size: 32px; } }
+  
+    .year-tag{ display:inline-block; margin-bottom:10px; font-size:12px; font-weight:700;
+      letter-spacing:.06em; text-transform:uppercase; color:#fff; background:rgba(255,255,255,.22);
+      border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:3px 11px; }
+    .ai-note{ margin:18px 0 26px; border:1px solid #f0b7c8; border-left:5px solid #ff4e8b;
+      background:linear-gradient(180deg,#fff6f9 0%,#fffdfd 100%); border-radius:12px; padding:16px 18px; }
+    .ai-note h2{ margin:0 0 8px; font-size:16px; font-weight:800; color:#b4005c;
+      display:flex; align-items:center; gap:8px; }
+    .ai-note h2 span{ background:#ff4e8b; color:#fff; border-radius:999px;
+      font-size:11px; padding:3px 9px; letter-spacing:.05em; text-transform:uppercase; }
+    .ai-note p{ margin:0 0 7px; font-size:14px; line-height:1.6; color:#3a2b33; }
+    .ai-note p:last-child{ margin-bottom:0; }
+    .ai-note b{ color:#b4005c; }
+
+    .prog{ margin-top:10px; }
+    .prog .bar{ height:7px; background:#efeaff; border-radius:999px; overflow:hidden; }
+    .prog .bar i{ display:block; height:100%; width:0; border-radius:999px;
+      background:linear-gradient(90deg,#ff4e8b,#b65cff,#4c7bff); transition:width .35s; }
+    .prog .num{ display:block; margin-top:5px; font-size:12px; color:#6b7280; font-weight:600; }
+    .prog.empty .num{ color:#9ca3af; font-weight:400; }
+    .reset-box{ display:flex; align-items:center; justify-content:space-between; gap:14px;
+      flex-wrap:wrap; margin:22px 0 8px; padding:14px 16px; background:#fff;
+      border:1px solid #e9e6f2; border-radius:12px; }
+    .reset-box p{ margin:0; font-size:13.5px; color:#4b5563; }
+    .reset-box b{ color:#b4005c; }
+    .reset-btn{ border:1px solid #f0b7c8; background:#fff6f9; color:#b4005c; font-weight:700;
+      border-radius:10px; padding:9px 18px; cursor:pointer; font-size:13.5px; font-family:inherit; }
+    .reset-btn:hover{ background:#ffe9f1; }
+
+/* ==== АВТОРСТВО ==== */
+.vi-credit{margin:34px 0 8px;padding:14px 16px;border:1px solid var(--line,#e5e7eb);border-radius:10px;
+  background:#faf9fd;font-size:12.5px;line-height:1.6;color:#6b7280}
+.vi-credit b{color:#454553}
+.vi-credit .vi-lic{display:block;margin-top:6px;font-size:11.5px}
+.vi-wm{display:none}
+.vi-credit a,.vi-about a{color:#0f766e;text-decoration:underline;text-underline-offset:2px}
+.vi-credit a:hover,.vi-about a:hover{color:#0b5d57}
+@media print{.vi-credit a,.vi-about a{color:inherit;text-decoration:none}}
+
+@media print{
+  .vi-wm{display:block;position:fixed;bottom:6mm;left:0;right:0;text-align:center;
+    font-size:9pt;color:#8a8a8a;letter-spacing:.02em}
+  .vi-wm::after{content:"© 2026 · t.me/enthsil · Материал для личной подготовки. Копирование и распространение без согласия автора не допускается."}
+  aside,#sidebar,.sidebar-toggle,.sidebar-backdrop,.law-panel,.search{display:none !important}
+  body::before{content:"t.me/enthsil";position:fixed;top:50%;left:50%;
+    transform:translate(-50%,-50%) rotate(-32deg);font-size:62pt;letter-spacing:.04em;color:rgba(0,0,0,.06);
+    z-index:9999;pointer-events:none;white-space:nowrap}
+}
+
+
+/* ==== СОХРАНЕНИЕ ДЛЯ ОФЛАЙНА ==== */
+.vi-offline{display:none;margin:22px 0 0;padding:16px 18px;border:1px solid #cfe6e1;
+  border-radius:12px;background:#f2f9f7}
+.vi-offline h2{margin:0 0 6px;font-size:15px;color:#0b5d57}
+.vi-offline p{margin:0 0 12px;font-size:13.5px;line-height:1.6;color:#3f5b57}
+.vi-offline button{border:1px solid #0f766e;background:#0f766e;color:#fff;font-weight:700;
+  border-radius:10px;padding:10px 20px;cursor:pointer;font-size:13.5px;font-family:inherit}
+.vi-offline button:hover{background:#0b5d57}
+.vi-offline button[disabled]{opacity:.55;cursor:default}
+.vi-offline .vi-off-state{margin-top:10px;font-size:13px;color:#0b5d57;min-height:1.2em}
+.vi-ios-hint{display:none;margin:22px 0 0;padding:16px 18px;border:1px solid #dfe7e5;
+  border-radius:12px;background:#fbfcfc;font-size:13.5px;line-height:1.65;color:#3f5b57}
+.vi-ios-hint b{color:#0b5d57}
+</style>
+
+<!-- Установка на телефон и офлайновый режим -->
+<link rel="manifest" href="./app.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0f766e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Подготовка к ВИ">
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <span class="year-tag">Материал набран в 2026 году</span><br>
+      <span class="eyebrow">Подготовка к ВИ · магистратура 40.04.01</span>
+      <h1>ВИ МГЮА</h1>
+      <p>Интерактивные материалы для подготовки к вступительному испытанию: связные учебные разделы, схемы, вырезки пленумов, тренажёры и финальный самоконтроль.</p>
+      <div class="pills">
+        <span class="pill">📚 Теория с разбором</span>
+        <span class="pill">🧭 Схемы и алгоритмы</span>
+        <span class="pill">⚖️ Пленумы в вырезках</span>
+        <span class="pill">✅ Тесты и тренажёр</span>
+      </div>
+    </div>
+
+
+    <div class="ai-note">
+      <h2><span>Важно</span>Материалы обработаны с помощью ИИ</h2>
+      <p>Вся база по подготовке переработана искусственным интеллектом, поэтому <b>в материалах возможны неточности</b>: ошибки в реквизитах актов, устаревшие редакции норм, неверные выводы по спорным вопросам.</p>
+      <p>Файлы и приложение <b>не гарантируют поступление или успешную сдачу экзамена</b>. Это вспомогательный инструмент подготовки, а не официальный источник права.</p>
+      <p><b>Проверка содержимого — ваша задача как юриста.</b> Перед использованием в ответе сверяйте нормы и разъяснения по действующей редакции в справочно-правовой системе.</p>
+    </div>
+
+    <div class="ai-note" style="border-color:#4c7bff;background:#f4f7ff">
+      <h2><span style="background:#4c7bff">Как пользоваться</span>Порядок работы</h2>
+      <p><b>1. Алгоритм.</b> В начале каждого из двух больших файлов лежит алгоритм решения казуса и шаблон письменного ответа — читайте перед каждой темой.</p>
+      <p><b>2. Тема.</b> Внутри темы: «Зачем эта тема» → нормативная база с кликабельными нормами → разделы по программе → таблицы разграничений → блок «Ловушки» → реальные задачи ВИ с разбором по каждому вопросу.</p>
+      <p><b>3. Тренажёр.</b> После темы прогоните её в тренажёре с фильтром по предмету. Включите строгий режим, когда материал уже сидит.</p>
+      <p><b>4. Проверка готовности.</b> За несколько дней до экзамена — чек-листы по программе и банк реальных задач.</p>
+      <p><b>Поиск</b> в каждом файле ищет по всему тексту раздела, а не только по заголовкам. Клик по номеру статьи или постановления открывает его текст в боковой панели.</p>
+    </div>
+
+    <p class="section-label">Материалы</p>
+    <div class="grid">
+    <a class="card" href="./gp_gpp_interactive.html" style="--accent:#6a54ff">
+      <span>23 темы ГП · 10 тем ГПП</span>
+      <strong>ГП + ГПП</strong>
+      <small>Гражданское право и процесс: 110 разделов, 167 таблиц, 31 схема, 40 реальных задач ВИ с разбором</small>
+    </a>
+
+    <a class="card" href="./up_upp_interactive.html" style="--accent:#ff4e8b">
+      <span>16 тем УП · 10 тем УПП</span>
+      <strong>УП + УПП</strong>
+      <small>Уголовное право и процесс: 111 разделов, 102 таблицы, 39 реальных задач ВИ с разбором</small>
+    </a>
+
+    <a class="card" href="./readiness_interactive.html" style="--accent:#4c7bff">
+      <span>Финальный контроль</span>
+      <strong>Проверка готовности</strong>
+      <small>Чек-листы по программе, банк из 32 задач ВИ 2025–2026, минимум пленумов и тезисы-ловушки</small>
+    </a>
+
+    <a class="card" href="./judicial_practice.html" style="--accent:#b65cff">
+      <span>Судебная практика</span>
+      <strong>Практика к казусам</strong>
+      <small>Позиции ВС, ВАС и КС: где применять, как влияет на правоотношения и как писать в ответе</small>
+    </a>
+
+    <a class="card" href="./trainer.html" style="--accent:#21c7d9">
+      <span>806 заданий · 100 ловушек</span>
+      <strong>Тренажёр</strong>
+      <small>Все вопросы с автопроверкой. Варианты перемешиваются при каждом запуске, за лишние отметки снимаются баллы</small>
+    </a>
+
+    
+
+    
+  </div>
+      <div class="ai-note vi-about" style="border-color:#0f766e;background:#f2f9f7">
+      <h2><span style="background:#0f766e">Об авторе</span>Права и условия использования</h2>
+      <p>Автор материалов — <b>Иванова М.М.</b>. © 2026. Все права защищены.</p>
+      <p>Связь с автором: <b><a href="mailto:ma193@vk.com">ma193@vk.com</a></b> · Telegram <b><a href="https://t.me/enthsil" target="_blank" rel="noopener">@enthsil</a></b> · VK <b><a href="https://vk.ru/enthsil1" target="_blank" rel="noopener">enthsil 1</a></b>.</p>
+      <p><b>Что можно.</b> Использовать материалы лично при подготовке к вступительному испытанию: читать, проходить тренажёр, распечатывать для себя.</p>
+      <p><b>Что нельзя.</b> Копировать, распространять, передавать третьим лицам, публиковать в сети, размещать на образовательных платформах, а также использовать в коммерческих целях — в том числе для платных курсов, репетиторства и продажи — без письменного согласия автора.</p>
+      <p style="font-size:13px;color:#6b7280;margin-top:10px">Материалы содержат авторские схемы, разборы задач и структуру подачи, созданные автором. Нарушение условий влечёт ответственность, предусмотренную частью четвёртой Гражданского кодекса РФ (ст. 1252, 1301 ГК РФ).</p>
+    </div>
+
+  
+  <div class="vi-offline" id="viOffline">
+    <h2>Сохранить для чтения без интернета</h2>
+    <p>Материал загрузится в память устройства — примерно 50 МБ. После этого разделы
+      открываются в метро, в поезде и где угодно ещё, сеть больше не нужна.
+      Разделы, которые вы просто откроете, сохраняются и сами.</p>
+    <button type="button" id="viOfflineBtn">Сохранить всё</button>
+    <div class="vi-off-state" id="viOfflineState"></div>
+  </div>
+
+  <div class="vi-ios-hint" id="viIosHint">
+    Чтобы материал открывался с рабочего стола как обычное приложение: нажмите
+    <b>«Поделиться»</b> внизу экрана, пролистайте список и выберите
+    <b>«На экран „Домой“»</b>. Появится иконка, и адресная строка больше мешать не будет.
+  </div>
+
+  <div class="vi-credit">Авторская разработка · <b>Иванова М.М.</b> · 2026. Контакты: <a href="mailto:ma193@vk.com">ma193@vk.com</a> · Telegram <a href="https://t.me/enthsil" target="_blank" rel="noopener">@enthsil</a> · VK <a href="https://vk.ru/enthsil1" target="_blank" rel="noopener">enthsil 1</a>.<span class="vi-lic">Личное использование при подготовке разрешено. Копирование, распространение, публикация и коммерческое использование без письменного согласия автора не допускаются.</span></div>
+  </main>
+
+<script>
+(function(){
+  var MAP=[["gp_gpp_interactive.html","gp_gpp","тем"],["up_upp_interactive.html","up_upp","тем"],
+           ["readiness_interactive.html","readiness","пунктов"],
+           ["judicial_practice.html","practice","постановлений"],["trainer.html","trainer","заданий"]];
+  var LS; try{ LS=window.localStorage; }catch(e){ LS=null; }
+  function read(k){ try{ return LS?JSON.parse(LS.getItem("vi:stats:"+k)||"null"):null; }catch(e){ return null; } }
+  var any=false;
+  MAP.forEach(function(m){
+    var card=document.querySelector('a.card[href="./'+m[0]+'"]'); if(!card) return;
+    var st=read(m[1]);
+    var box=document.createElement("div"); box.className="prog";
+    if(st&&st.total){
+      any=true;
+      var pct=Math.round(st.done*100/st.total);
+      box.innerHTML='<span class="bar"><i style="width:'+pct+'%"></i></span>'+
+        '<span class="num">'+st.done+' из '+st.total+' '+m[2]+' · '+pct+'%'+
+        (st.avg!=null?' · средний результат '+st.avg+'%':'')+'</span>';
+    } else {
+      box.className="prog empty";
+      box.innerHTML='<span class="bar"><i style="width:0"></i></span><span class="num">не начато</span>';
+    }
+    card.appendChild(box);
+  });
+  var grid=document.querySelector(".grid");
+  if(grid){
+    var rb=document.createElement("div"); rb.className="reset-box";
+    rb.innerHTML='<p>Прогресс хранится <b>только в этом браузере</b> и не передаётся никуда. Отметки ставятся вручную или автоматически, когда тема дочитана до конца.</p>'+
+      '<button type="button" class="reset-btn" id="resetAll">Сбросить весь прогресс</button>';
+    grid.parentNode.insertBefore(rb, grid.nextSibling);
+    document.getElementById("resetAll").addEventListener("click",function(){
+      if(!confirm("Сбросить прогресс по всем разделам? Действие необратимо.")) return;
+      try{ var kill=[]; for(var i=0;i<LS.length;i++){ var k=LS.key(i); if(k&&k.indexOf("vi:")===0) kill.push(k); }
+        kill.forEach(function(k){ LS.removeItem(k); }); }catch(e){}
+      location.reload();
+    });
+  }
+})();
+</script>
+<div class="vi-wm" aria-hidden="true"></div><span aria-hidden="true" style="font-size:0;line-height:0">⁠​‌​​‌​​‌​‌​‌​‌‌​​‌​​​​​‌​‌​​‌‌‌​​‌​​‌‌‌‌​‌​‌​‌‌​​‌​​​​​‌​​‌​‌‌​‌​‌​​‌‌​‌​‌​​‌‌​‌​​‌​‌‌​‌​​‌‌​​‌​​​‌‌​​​​​​‌‌​​‌​​​‌‌​‌‌​⁠</span>
+
+<script>
+/* Офлайновый режим включается только на сайте по https.
+   В настольной сборке и при открытии файла с диска ничего не делается. */
+(function(){
+  if (location.protocol !== 'https:') return;
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('./sw.js').catch(function(){});
+  });
+})();
+</script>
+
+<script>
+/* Кнопка сохранения и подсказка для iPhone. Показываются только там,
+   где в них есть смысл: на сайте по https с поддержкой офлайна. */
+(function(){
+  var блок = document.getElementById('viOffline');
+  var кнопка = document.getElementById('viOfflineBtn');
+  var строка = document.getElementById('viOfflineState');
+  var подсказка = document.getElementById('viIosHint');
+
+  var сайт = location.protocol === 'https:';
+  var умеет = 'serviceWorker' in navigator;
+
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  var ужеПоставлено = window.navigator.standalone === true ||
+    (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+
+  if (сайт && умеет && блок) блок.style.display = 'block';
+  if (сайт && iOS && !ужеПоставлено && подсказка) подсказка.style.display = 'block';
+
+  if (!кнопка) return;
+
+  кнопка.addEventListener('click', function(){
+    if (!navigator.serviceWorker.controller) {
+      строка.textContent = 'Обновите страницу и попробуйте ещё раз.';
+      return;
+    }
+    кнопка.disabled = true;
+    строка.textContent = 'Загружаю…';
+    navigator.serviceWorker.controller.postMessage({ 'тип': 'сохранить-всё' });
+  });
+
+  navigator.serviceWorker && navigator.serviceWorker.addEventListener('message', function(e){
+    var d = e.data || {};
+    if (d['тип'] === 'прогресс') {
+      строка.textContent = 'Сохранено разделов: ' + d.готово + ' из ' + d.всего;
+    } else if (d['тип'] === 'готово') {
+      строка.textContent = 'Готово. Материал открывается без интернета.';
+      кнопка.textContent = 'Сохранено';
+    } else if (d['тип'] === 'ошибка') {
+      строка.textContent = 'Не удалось загрузить всё — проверьте связь и повторите.';
+      кнопка.disabled = false;
+    }
+  });
+})();
+</script>
+</body>
+</html>

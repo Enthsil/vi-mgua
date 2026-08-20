@@ -1,0 +1,52 @@
+{
+  "name": "Подготовка к ВИ — магистратура 40.04.01",
+  "short_name": "Подготовка к ВИ",
+  "description": "Материалы для подготовки к вступительному испытанию в магистратуру по направлению 40.04.01 «Юриспруденция»: гражданское и уголовное право и процесс, тренажёр, разборы задач. Автор — Иванова М.М.",
+  "lang": "ru",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f8f8",
+  "theme_color": "#0f766e",
+  "categories": ["education", "books"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Тренажёр",
+      "short_name": "Тренажёр",
+      "url": "./trainer.html",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Гражданское право и процесс",
+      "short_name": "ГП + ГПП",
+      "url": "./gp_gpp_interactive.html"
+    },
+    {
+      "name": "Уголовное право и процесс",
+      "short_name": "УП + УПП",
+      "url": "./up_upp_interactive.html"
+    }
+  ]
+}
